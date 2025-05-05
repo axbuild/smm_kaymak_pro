@@ -156,26 +156,29 @@ const DisplaySection = () => {
   return (
     <Section>
       <MainTitle>
-        Immersive <br /> Display
+        SMM-услуги для роста вашего бизнеса
       </MainTitle>
       <TextBlockRight>
-        <Title>Super Ratine XDR Display</Title>
+        <Title>Таргетированная реклама</Title>
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus dignissimos ipsam.
+          Настройка и ведение рекламных кампаний в соцсетях для привлечения новых клиентов и увеличения продаж.
         </Text>
       </TextBlockRight>
       <TextBlockLeft ref={container}>
-        <Title>Big is better</Title>
+        <Title>Контент-маркетинг</Title>
         <Text>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Necessitatibus dignissimos ipsam.
+          Создание вовлекающего контента, который формирует доверие к вашему бренду и стимулирует активность аудитории.
         </Text>
       </TextBlockLeft>
-
+      <TextBlockRight>
+        <Title>Аналитика и отчётность</Title>
+        <Text>
+          Подробная аналитика, прозрачные отчёты и постоянная оптимизация для максимального результата.
+        </Text>
+      </TextBlockRight>
       <TextContainer>
-        <MovingText ref={textOne}>Tougher then ever!</MovingText>
-        <MovingText ref={textTwo}>Every touch matters.</MovingText>
+        <MovingText ref={textOne}>Больше охват — больше продаж</MovingText>
+        <MovingText ref={textTwo}>SMM, который работает на вас</MovingText>
       </TextContainer>
     </Section>
   );

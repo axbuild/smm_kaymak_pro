@@ -6,14 +6,16 @@ source: https://sketchfab.com/3d-models/apple-iphone-13-pro-max-4328dea00e47497d
 title: Apple iPhone 13 Pro Max
 */
 
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useEffect } from "react";
 import { useGLTF } from "@react-three/drei";
 import gsap from "gsap";
-import { useThree } from "@react-three/fiber";
+import { useThree, useLoader } from "@react-three/fiber";
+import { TextureLoader } from 'three';
 
-export default function Model({ ...props }) {
+export default function Model({ wallpaper, ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/scene.gltf");
+  const texture = useLoader(TextureLoader, wallpaper);
 
   let camera = useThree((state) => state.camera);
   let scene = useThree((state) => state.scene);
@@ -80,6 +82,13 @@ mm.add({
       
         
   }, []);
+
+  useEffect(() => {
+    if (materials.Wallpaper && texture) {
+      materials.Wallpaper.map = texture;
+      materials.Wallpaper.needsUpdate = true;
+    }
+  }, [texture, materials.Wallpaper]);
 
   return (
     <group ref={group} {...props} dispose={null}>

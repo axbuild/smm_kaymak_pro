@@ -113,28 +113,38 @@ const Text = styled.div`
   }
 `;
 
-const ProcessorSection = () => {
+const Advantage = styled.div`
+  margin-bottom: 2rem;
+`;
+
+const SmallText = styled.span`
+  font-size: var(--fontxs);
+  color: var(--greyLight);
+  font-weight: 400;
+  margin-top: 0.2rem;
+  display: block;
+`;
+
+const AdvantagesSection = () => {
   return (
     <Section>
-      <Title>Fastest Processor</Title>
-      <Processor>
-        <img src={a15} alt="A15 processor" />
-      </Processor>
+      <Title>Почему выбирают нас?</Title>
       <Text>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut omnis,
-          quaerat aliquid optio veniam.
-        </span>
-        <span>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Reprehenderit numquam quae nisi, dolore cum voluptatem cumque quo sit,
-          consequuntur necessitatibus iste fuga assumenda deserunt aut.
-        </span>
+        <Advantage>
+          <span>Экспертность и опыт</span>
+          <SmallText>Более 5 лет успешного продвижения бизнеса в соцсетях.</SmallText>
+        </Advantage>
+        <Advantage>
+          <span>Прозрачность и отчётность</span>
+          <SmallText>Регулярные отчёты, понятные метрики, честные результаты.</SmallText>
+        </Advantage>
+        <Advantage>
+          <span>Индивидуальный подход</span>
+          <SmallText>Решения под ваши задачи и бюджет.</SmallText>
+        </Advantage>
       </Text>
     </Section>
   );
 };
 
-export default ProcessorSection;
+export default AdvantagesSection;

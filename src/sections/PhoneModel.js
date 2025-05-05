@@ -15,14 +15,14 @@ const Container = styled.div`
   transition: all 0.3s ease;
 `;
 
-const PhoneModel = () => {
+const PhoneModel = ({ wallpaper }) => {
   return (
     <Container id="phone-model">
       <Canvas camera={{ fov: 14 }}>
         <ambientLight intensity={1.25} />
         <directionalLight intensity={0.4} />
         <Suspense fallback={null}>
-          <Model />
+          <Model wallpaper={wallpaper} />
         </Suspense>
         <Environment preset="night" />
         <AdaptiveDpr pixelated />

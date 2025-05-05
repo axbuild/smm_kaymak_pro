@@ -101,28 +101,16 @@ const Quote = () => {
     <Section ref={sectionRef}>
       <TextContainer>
         <Text delay="0s">
-          {" "}
-          <span>&#8220; You can't connect the dots looking forward;</span>{" "}
+          <span>«SMM — это не просто посты, это рост вашего бизнеса»</span>
         </Text>
         <Text delay="0.4s">
-          {" "}
-          <span>
-            &nbsp;&nbsp;&nbsp;you can only connect them looking backward.
-          </span>{" "}
+          <span>Мы знаем, как превратить подписчиков в клиентов.</span>
         </Text>
         <Text delay="0.8s">
-          {" "}
-          <span>&nbsp;&nbsp;&nbsp;so you have to trust that the dots</span>{" "}
+          <span>Доверьте продвижение экспертам — и увидите результат уже в первый месяц!</span>
         </Text>
         <Text delay="1.2s">
-          {" "}
-          <span>
-            &nbsp;&nbsp;&nbsp;will somehow connect in your future. &#8221;
-          </span>{" "}
-        </Text>
-        <Text delay="1.6s">
-          {" "}
-          <span className="author">&#x23AF; Steve Jobs</span>{" "}
+          <span className="author">— SMM Kaymak</span>
         </Text>
       </TextContainer>
     </Section>

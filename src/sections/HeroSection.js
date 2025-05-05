@@ -23,6 +23,7 @@ const Title = styled.h1`
   font-size: var(--fontlg);
   font-family: var(--fontL);
   color: var(--greyLight);
+  letter-spacing: 0.02em;
 
   @media screen and (max-width: 48em) {
     font-size: var(--fontmd);
@@ -30,10 +31,11 @@ const Title = styled.h1`
   }
 
   @media screen and (max-width: 30em) {
-    width: 70%;
+    width: 90%;
     color: var(--white);
   }
 `;
+
 const TextContainer = styled.div`
   width: 100%;
   height: 100vh;
@@ -95,17 +97,43 @@ const VideoContainer = styled.div`
   }
 `;
 
+const CTAButton = styled.a`
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  padding: 1rem 2.5rem;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 40px;
+  font-size: var(--fontmd);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  transition: background 0.2s;
+  z-index: 2;
+  &:hover {
+    background: var(--darkBlue);
+  }
+  @media screen and (max-width: 48em) {
+    left: 1rem;
+    bottom: 1.5rem;
+    font-size: var(--fontsm);
+    padding: 0.8rem 1.5rem;
+  }
+`;
+
 const HeroSection = () => {
   return (
     <Section>
       <VideoContainer>
         <video src={backgroundVideo} type="video/mp4" autoPlay muted loop />
       </VideoContainer>
-      <Title>iPhone 14 Pro Max</Title>
+      <Title>SMM для вашего бизнеса</Title>
       <TextContainer>
-        <span>So.Cold.</span>
-        <span>So.Bold.</span>
+        <span>Больше клиентов.</span>
+        <span>Больше продаж.</span>
       </TextContainer>
+      <CTAButton href="#pricing">Получить консультацию</CTAButton>
     </Section>
   );
 };

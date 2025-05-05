@@ -77,7 +77,8 @@ const TitleContainer = styled.div`
 const Title = styled.h1`
   font-size: var(--fontBig);
   z-index: 5;
-  text-transform: capitalize;
+  text-transform: none;
+  margin-bottom: 0.5rem;
 
   @media screen and (max-width: 70em) {
     font-size: var(--fontxxxl);
@@ -87,7 +88,23 @@ const Title = styled.h1`
   }
 `;
 
-const CameraSection = () => {
+const CaseText = styled.div`
+  font-size: var(--fontmd);
+  color: var(--white);
+  background: rgba(0,0,0,0.35);
+  border-radius: 16px;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  max-width: 90%;
+  text-align: right;
+  @media screen and (max-width: 48em) {
+    font-size: var(--fontsm);
+    padding: 0.7rem 1rem;
+  }
+`;
+
+const CasesSection = () => {
   const sectionRef = useRef(null);
 
   const videoRef1 = useRef(null);
@@ -156,12 +173,13 @@ const CameraSection = () => {
       <V1 ref={videoRef1} src={v1} type="video/mp4" autoPlay muted loop />
       <V2 ref={videoRef2} src={v2} type="video/mp4" autoPlay muted loop />
       <TitleContainer ref={titleRef}>
-        <Title>Ready.</Title>
-        <Title>Steady.</Title>
-        <Title>Action.</Title>
+        <Title>Наши кейсы</Title>
+        <CaseText>+120% заявок для интернет-магазина одежды</CaseText>
+        <CaseText>Рост подписчиков на 3000+ за месяц для локального кафе</CaseText>
+        <CaseText>Вирусный ролик — 1,2 млн просмотров для бренда косметики</CaseText>
       </TitleContainer>
     </Section>
   );
 };
 
-export default CameraSection;
+export default CasesSection;

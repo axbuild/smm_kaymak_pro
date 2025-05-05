@@ -50,6 +50,7 @@ const Battery = styled.ul`
   border-radius: 8px;
   padding: 0.5rem;
   width: 15rem;
+  text-align: center; /* Center the text inside the list items */
 
   li {
     width: 100%;
@@ -57,6 +58,11 @@ const Battery = styled.ul`
     background-color: var(--dark);
     background-image: linear-gradient(-90deg, var(--gradient));
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white); /* Set a more suitable text color */
+    font-size: var(--fontmd); /* Adjust the font size for better readability */
   }
 
   & > *:not(:first-child):not(:last-child) {
@@ -95,13 +101,13 @@ const BatterySection = () => {
 
   return (
     <Section id="battery">
-      <Title>Go all day with single charge...</Title>
+      <Title>Преимущества работы с нами — всегда на связи</Title>
       <Battery ref={battery}>
-        <li />
-        <li />
-        <li />
-        <li />
-        <li />
+        <li>Оперативность</li>
+        <li>Поддержка 24/7</li>
+        <li>Регулярная отчётность</li>
+        <li>Гибкость решений</li>
+        <li>Реальный результат</li>
       </Battery>
     </Section>
   );
