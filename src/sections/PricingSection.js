@@ -192,7 +192,7 @@ const PricingSection = () => {
               <PricingItem>Базовая аналитика</PricingItem>
             </PricingList>
             <Price>от 15 000 сом/мес</Price>
-            <Btn as="a" href="#contact">Оставить заявку</Btn>
+            <Btn as="a" href="https://t.me/axbuild">Оставить заявку</Btn>
           </PricingCard>
           <PricingCard>
             <PricingTitle>Продвижение</PricingTitle>
@@ -203,7 +203,7 @@ const PricingSection = () => {
               <PricingItem>Подробная аналитика</PricingItem>
             </PricingList>
             <Price>от 25 000 сом/мес</Price>
-            <Btn as="a" href="#contact">Оставить заявку</Btn>
+            <Btn as="a" href="https://t.me/axbuild">Оставить заявку</Btn>
           </PricingCard>
           <PricingCard>
             <PricingTitle>Эксперт</PricingTitle>
@@ -214,7 +214,7 @@ const PricingSection = () => {
               <PricingItem>Персональный менеджер</PricingItem>
             </PricingList>
             <Price>от 40 000 сом/мес</Price>
-            <Btn as="a" href="#contact">Оставить заявку</Btn>
+            <Btn as="a" href="https://t.me/axbuild">Оставить заявку</Btn>
           </PricingCard>
         </PricingCardsContainer>
       </Section>

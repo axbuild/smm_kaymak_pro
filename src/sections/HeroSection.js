@@ -133,7 +133,7 @@ const HeroSection = () => {
         <span>Больше клиентов.</span>
         <span>Больше продаж.</span>
       </TextContainer>
-      <CTAButton href="#pricing">Получить консультацию</CTAButton>
+      <CTAButton href="https://t.me/axbuild">Получить консультацию</CTAButton>
     </Section>
   );
 };
